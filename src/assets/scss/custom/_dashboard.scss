@@ -1,0 +1,544 @@
+/*========= Dashboard Scss ==========*/
+
+.v-breadcrumbs {
+   h2 {
+      font-weight: $breadcrumb-font-weight;
+      color: $breadcrumb-font-color;
+      font-size: $breadcrumb-font-size;
+   }
+}
+.border-rad-sm.overflow-hidden {
+   .flex {
+      &:first-child {
+         border-bottom-left-radius: $card-border-radius;
+         overflow: hidden;
+      }
+      &:last-child {
+         border-bottom-right-radius: $card-border-radius;
+         overflow: hidden;
+      }
+   }
+}
+
+.dash-card {
+   color: $light;
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dash-icon {
+   font-size: $h1-font-size;
+}
+
+.dash-card-wrap {
+   background-color: $light;
+   border: $card-border;
+   box-shadow: $card-shadow;
+   .dash-card-light {
+      border-right: 1px solid $input-border-color;
+      float: left;
+      text-align: center;
+      padding: 1.25rem;
+      width: 33.3%;
+      &:last-child {
+         border-right: none;
+      }
+      h2 {
+         font-size: 1.625rem; //26px;
+         margin: 0;
+      }
+      p {
+         font-size: 1rem;
+         margin-bottom: 0.5rem;
+      }
+   }
+}
+
+.chart-stat {
+   position: absolute;
+   right: 0;
+   left: 0;
+   text-align: center;
+   top: 40%;
+   font-size: 1.625rem; //26px;
+   font-weight: 400;
+}
+
+.ladgend-wrapper {
+   p {
+      margin-right: 8px;
+      display: inline-block;
+      span {
+         color: $gray;
+      }
+   }
+   .ladgend {
+      width: 25px;
+      display: inline-block;
+      height: 10px;
+      border-radius: 30px;
+      margin-right: 5px;
+      &.ladgend-warning {
+         background: $light-warning;
+      }
+      &.ladgend-success {
+         background: $light-success;
+      }
+      &.ladgend-pink {
+         background: $light-pink;
+      }
+   }
+}
+
+.v-list {
+   padding: 0;
+   .listing {
+      border-bottom: $card-border;
+      padding: 0.625rem 0; //10px 0;
+      &:last-child {
+         border-bottom: none;
+      }
+   }
+}
+
+/* ======== Loader ====================*/
+
+.loader-overlay {
+   position: absolute;
+   background: rgba(255, 255, 255, 0.8);
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0px;
+   align-items: center;
+   overflow: hidden;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+}
+
+/*============================ Web Analytic Dashboard =============================*/
+
+.card-list {
+	padding: 0;
+	.v-list-item {
+		padding: 0.35rem 1.25rem;
+		height: auto;
+		border-bottom: $card-border;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+   .v-progress-linear {
+      border-radius: 10px;
+   }
+}
+.top-selling .v-list-item {
+	padding: 0.625rem 1.25rem;
+}
+
+/*=============== Toaster ===================*/
+
+.mini-toastr {
+   font-family: $font-family-base !important;
+   .mini-toastr__notification {
+      opacity: .9;
+      border-radius: 3px;
+      .mini-toastr-notification__title {
+         font-weight: 600;
+         font-size: 1.5rem;
+      }
+      .mini-toastr-notification__message {
+         padding: 0px;
+      }
+      &.-success {
+         background-color: $success;
+      }
+      &.-error {
+         background-color: $danger;
+      }
+      &.-warn {
+         background-color: $warning;
+      }
+      &.-info {
+         background-color: $info;
+      }
+   }
+}
+.layout.row .flex >div{
+   height:100%;
+}
+.today-weather,.welcome-message,.col-height-auto >div,.profile-head ,.quote-widget,.height-auto{
+    height:auto !important;
+}
+.grid-list-xl{
+    max-width:inherit !important;
+}
+/*========== Dashboard Responsive ==========*/
+
+@media (max-width: 1456px) and (min-width: 960px) {
+   .server-load {
+      .px-4 {
+         padding: 0 !important;
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   .theme-layouts {
+      >div {
+         &:nth-of-type(3) {
+            display: none;
+         }
+      }
+   }
+}
+
+@media (max-width: 1263px) {
+   .theme-layouts {
+      >div {
+         &:nth-of-type(2) {
+            display: none;
+         }
+      }
+   }
+}
+
+@media (max-width: 1340px) and (min-width: 1100px) {
+   .table {
+      .label {
+         padding: 0.25rem 0.2rem;
+      }
+   }
+}
+
+@media (max-width: 599px) {
+   .breadcrumbs {
+      padding: 0;
+   }
+}
+
+@media (max-width: 520px) {
+   .dash-card-wrap .dash-card-light {
+      width: 100%;
+   }
+   .label {
+      padding: 0.15rem 0.2rem !important;
+      font-size: 70% !important;
+   }
+}
+
+@media (max-width: 400px) {
+   .breadcrumbs h2 {
+      font-size: 1rem;
+   }
+}
+
+/*====================== Ecommerce ========================*/
+
+@media(max-width:1260px) {
+   .sales-widget {
+      #bar-chart {
+         height: 225px !important;
+      }
+   }
+}
+
+@media(max-width:991px) {
+   .sales-widget {
+      .cart-wrap {
+         padding:0 !important;
+      }
+   }
+}
+
+
+
+// Crm Dashboard
+
+// .magazine-stats-card{
+//    .chartjs-render-monitor{
+//       width:100% !important;
+//    }
+// }   
+
+.app-card {
+   .app-full-content {
+      .notification-card-content {
+         padding-left:1.25rem;
+         padding-right:1.25rem;
+         .v-card{
+            border-radius:8px;
+            .v-input__prepend-outer{
+					line-height:1.5;
+					font-size:1rem;
+            }
+         }
+      }
+   }
+}
+   
+
+.text-nowrap{
+   white-space:nowrap;
+}
+
+
+.chat-widget-wrap.crm-chat-wrap {
+   .chat-body {
+      padding:1rem 1.25rem;
+   }
+}
+
+// Crypto Dashboard
+
+
+.ticker-item-wrap {
+   border-left: 1px solid rgba(228,231,239,.4);
+   border-right: 1px solid rgba(228,231,239,.4);
+   width:330px !important;
+}
+
+// spacer classs crypto
+
+.vue-card-space{
+   padding:1.25rem;
+}
+
+
+.exchange-statistics .crypto-icon-wrap .cc:nth-child(2){
+   margin-left:-10px;
+}
+
+.crypto-card-wrap {
+   .app-card-content {
+      padding:0px;
+   }  
+}
+
+// crm component 
+.thumb-gap { 
+   margin:.2rem;
+}
+.project-grid-title,.project-detail-title{
+   margin-left:-1.5rem;
+   margin-right:-1.5rem;
+}
+.project-detail-title{
+   margin-top:-12px;
+}
+
+.contact-wrapper .client-wrapper .contact-tab-wrapper{
+   .tab-image img{
+      border-radius:5px;
+   }
+   .icon {
+      opacity:0;
+      position: absolute;
+      right: 0;
+      bottom: 15px;
+      left: auto;
+      transition: all .5s ease-in-out;
+
+      &.theme--light.v-list .v-list-item--link:hover:before{
+         display: none;
+      }
+      &.v-list--three-line .v-list-item{
+         min-height:auto;
+		}
+		.v-list-item__action-text .v-icon{
+			font-size:1.125rem;
+		}
+   }
+   .app-card:hover .icon{
+      opacity:1;
+   }   
+}   
+
+
+.project-icon .v-icon.active{
+   opacity:1;
+}
+.project-icon .v-icon{
+   opacity:0.5;
+}
+
+
+.contact-wrapper .client-wrapper .contact-tab-wrapper .icon.theme--light.v-list .v-list-item--link:hover{
+   background:none;
+}
+
+.statistics-chart-wrap .chartjs-render-monitor{
+   width:100%;
+}
+
+.search-wrap .app-card{
+   padding-left:1.25rem;
+   padding-right:1.25rem;
+   .app-card-content{
+      padding:0px;
+   }
+}
+.search-wrap .search-field-wrap{
+	.v-text-field__details{
+		display: none;
+	}
+}
+.text-ellipse{
+   white-space: nowrap !important;
+   overflow: hidden !important;
+   text-overflow: ellipsis !important;
+}
+@media (max-width:1360px){
+   .contact-wrapper .client-wrapper .contact-tab-wrapper{
+      .icon {
+         bottom: 5px;
+         >div.pl-0{
+            padding-right: 0;
+         }
+      }
+   }
+   .search-wrap .search-field-wrap .w-75{    
+      width:70% !important;
+   } 
+}
+
+@media (max-width:1263px){
+   .search-wrap .search-field-wrap{
+      display: block !important;
+      .w-75{      
+         width:100% !important;
+         margin-bottom: 0.625rem;
+      }
+      .v-input{
+         padding-right: 0 !important;
+      }
+   }
+}
+
+@media (max-width:599px){
+   .search-wrap{
+      .search-text,.search-field{
+         padding-bottom:0px !important;
+      }
+   }
+}
+
+
+// crypto component
+
+.container.mktcap-container-wrap.grid-list-xl :not(:only-child) .layout:first-child{
+   margin-top:0px;
+}
+.container.mktcap-container-wrap.grid-list-xl :not(:only-child) .layout:last-child{
+   margin-bottom:0px;
+}
+.marketcap-chart-wrap canvas{
+   width:100% !important;
+}
+
+.wallet-stats-card{
+   padding:1.25rem 1.25rem;
+}
+
+.mktcap-wrapper{
+   width: 100%;
+   overflow: hidden;
+   overflow-x: auto;
+   .marketcap-chart-wrap.v-card{
+      padding:12px 24px;
+   }
+}  
+.mktcap-wrapper {
+	.mktcap-resp-scroll{
+		min-width:930px;
+	}
+	.layout.d-flex >div{
+		flex: 1 1 auto ;
+	}
+}
+
+// wallet page crypto
+@media (max-width:575px){
+   .price-wrap{
+      .price-btn-wrap{
+         width:100%;
+      }   
+   }
+}
+
+// scrolling problem issue descktop 
+
+.app-mini-layout .v-content__wrap{
+   overflow-x:hidden;
+}
+
+// dashobard crypto
+
+.trade-history-table{
+	max-height:300px;
+	.v-btn--icon{
+		min-width:2rem;
+		min-height:2rem;
+	}
+}
+.trade-history-warp .v-card{
+	box-shadow: none;
+}
+
+.quicktrade-tab-wrap,.reports-table-tab {
+   .v-slide-group__wrapper{
+      margin-bottom:1rem;
+   }
+}
+.coinlist-line-chart canvas{
+   width:250px !important;
+   height:80px !important;
+}
+
+.crypto-stats-card{
+	canvas{
+		width:100% !important;
+		margin-bottom:1rem;
+	}
+	.crypto-icon-wrap{
+		line-height: 1.5;
+	}
+}
+
+.crypto-row-mrgn{
+   margin-left:0px !important;
+   margin-right:0px !important;
+}
+
+div.container.grid-list-xl :not(:only-child) .layout:last-child{
+   margin-bottom:0px;
+}
+
+.crypto-dash-wrap {
+   .app-card{
+      height:auto;
+   }
+}
+
+// ticker slider 
+
+.ticker-slider{
+   margin-bottom:0.625rem;
+   div.app-card{
+      background-color:#37474f;
+      color:#e4e7ef;
+   }
+}
+@media (max-width:991px) {
+   .ticker-slider {
+      margin-bottom:.25rem;
+   }
+}
+.crm-stats-card-wrap{
+   margin-top:-12px !important;
+   .magazine-stats-card.crm-stats-card{
+      .app-card-content{
+         padding:0px;
+      }
+   }
+}

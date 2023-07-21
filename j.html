@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<meta property="og:title" content="Jufrah - جفره" />
+		<meta property="og:description" content="Sell, Buy, Swap" />
+		<meta property="og:image" content="{{ URL::to('/') }}logo_3.png" />
+		<meta
+			property="og:image:secure_url"
+			content="{{ URL::to('/') }}/logo_3.png"
+		/>
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+		<meta property="og:image:alt" content="Buy, Sell, Replace" />
+		<link rel="icon" type="image/x-icon" href="{{ URL::to('/') }}/logo.png" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Cairo', sans-serif;
+			}
+
+			main {
+				max-width: 800px;
+				margin: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				min-height: 100vh;
+			}
+
+			.component {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.component p {
+				margin-top: 10px;
+			}
+
+			main img {
+				/*width: 100px;*/
+				height: 100px;
+			}
+
+			main h1 {
+				font-size: 2rem;
+			}
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-items: center;
+			}
+		</style>
+		<title>Jufrah - جفره</title>
+	</head>
+	<body>
+		<main>
+			<div class="component">
+				<img src="{{ URL::to('/') }}/logo_2.png" alt="Jufrah Logo" />
+			</div>
+			<div class="component">
+				<h1>Sell, Buy, Exchange</h1>
+				<h1>بيع .. شراء .. استبدال</h1>
+			</div>
+			<div class="row">
+				<a
+					href="https://apps.apple.com/us/app/jufrah-%D8%AC%D9%81%D8%B1%D9%87/id1569642761"
+					><img
+						src="{{ URL::to('/') }}/img/app_store1.png"
+						alt=""
+						style="height: 50px; width: 146px; margin-right: 5px"
+				/></a>
+				<a href="https://play.google.com/store/apps/details?id=com.jufrah"
+					><img
+						src="{{ URL::to('/') }}/img/play_store1.png"
+						alt=""
+						style="height: 50px; width: 146px; margin-right: 5px"
+				/></a>
+				<a
+					href="https://appgallery.cloud.huawei.com/ag/n/app/C105515365?locale=en_GB&source=appshare&subsource=C105515365&shareTo=com.android.bluetooth&shareFrom=appmarket&shareIds=5f5f7f1fcaf94a5995f0c0bb686891e0_com.android.bluetooth&callType=SHARE"
+					><img
+						src="public/img/app_gallery.png"
+						alt=""
+						style="height: 50px; width: 146px; border-radius: 8px"
+				/></a>
+			</div>
+		</main>
+	</body>
+</html>

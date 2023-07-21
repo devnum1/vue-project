@@ -1,0 +1,71 @@
+/*========== Table Css =========*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+   max-width: 100%;
+   
+}
+.employee-Payroll-table{
+	img{
+		width: 30px;
+		height:30px;
+	}
+}
+.v-data-table table{
+   thead,
+   tbody,
+   tfoot {
+      tr {
+         td,
+         th {
+
+            white-space: nowrap;
+            vertical-align: middle;
+            font-size: 14px  !important;
+            font-weight: 400;
+            color: $body-color  !important;
+            height: 3.75rem  !important;
+            border-bottom:0 !important;
+            text-align: left !important;
+         }
+         th.text-center{
+            text-align: left !important;
+         }
+      }
+   }
+   tr {
+      border: none !important;
+   }
+   thead {
+      tr {
+         background-color: $base-light;
+         th{
+            font-weight: 500;
+         }
+      }
+   }
+   tbody {
+      tr:nth-child(even) {
+         background-color: $base-light;
+      }
+   }
+}
+/*=============== Responsive ===================*/
+
+@media (max-width: 768px) and (min-width: 320px) {
+
+   table{
+      tbody tr td{
+         font-size:0.875rem;
+      }
+	}
+	.v-data-table-header-mobile__wrapper{
+		width:90px;
+	}
+}
+
+.table-responsive{
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+}
